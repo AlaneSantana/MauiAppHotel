@@ -20,10 +20,6 @@ public partial class ContratacaodaHospedagem : ContentPage
         // date.value 
         dtpck_checkout.MinimumDate = dtpck_checkin.Date.Value.AddDays(1);
         dtpck_checkout.MaximumDate = dtpck_checkin.Date.Value.AddMonths(3);
-
-
-
-
     }
 
     // Evento do botão Avançar

@@ -9,22 +9,25 @@
     <VerticalStackLayout VerticalOptions="CenterAndExpand">
 
         <Label Text="Suíte Super Luxo"
-               TextColor="{StaticResource Primary}"
-               FontFamily="50"
+               TextColor="Navy"
+               FontFamily="Bold"
+               FontSize="40"
                HorizontalTextAlignment="Center" />
 
         <Frame Margin="10">
-            <HorizontalStackLayout>
-                <HorizontalStackLayout>
-                    <Label Text="Adultos: " />
-                    <Label Text="2"
-                           TextColor="{StaticResource Primary}" />
+            <HorizontalStackLayout Spacing="10">
+                <HorizontalStackLayout Spacing="5">
+                    <Label Text="Adultos: " 
+                           TextColor="Yellow"/>
+                    <Label Text="4"
+                           TextColor="{StaticResource Gray200}" />
                 </HorizontalStackLayout>
 
-                <HorizontalStackLayout>
-                    <Label Text="Crianças: " />
-                    <Label Text="1"
-                           TextColor="{StaticResource Primary}" />
+                <HorizontalStackLayout Spacing="5">
+                    <Label Text="Crianças: " 
+                           TextColor="Yellow"/>
+                    <Label Text="2"
+                           TextColor="{StaticResource Gray200}" />
                 </HorizontalStackLayout>
             </HorizontalStackLayout>
         </Frame>
@@ -32,30 +35,32 @@
         <Frame Margin="10">
             <Grid ColumnDefinitions="*, *, *"
                   RowDefinitions="Auto, Auto">
-                <Label Grid.Row="0" Grid.Column="0" Text="Check-in:" />
-                <Label Grid.Row="0" Grid.Column="1" Text="Check-out:" />
-                <Label Grid.Row="0" Grid.Column="2" Text="Estadia:" />
+                <Label Grid.Row="0" Grid.Column="0" Text="Check-in:" TextColor="Yellow" />
+                <Label Grid.Row="0" Grid.Column="1" Text="Check-out:" TextColor="Yellow" />
+                <Label Grid.Row="0" Grid.Column="2" Text="Estadia:" TextColor="Yellow" />
 
-                <Label Grid.Row="1" Grid.Column="0" Text="25/06/2023" />
-                <Label Grid.Row="1" Grid.Column="1" Text="30/06/2023" />
-                <Label Grid.Row="1" Grid.Column="2" Text="5 dias" />
+                <Label Grid.Row="1" Grid.Column="0" Text="08/11/2023" />
+                <Label Grid.Row="1" Grid.Column="1" Text="20/11/2023" />
+                <Label Grid.Row="1" Grid.Column="2" Text="12 dias" />
             </Grid>
         </Frame>
 
         <Frame Margin="10">
-            <HorizontalStackLayout>
-                <Label Text="Valor Total:" />
-                <Label Text="R$ 1.500,00" />
+            <HorizontalStackLayout Spacing="5">
+                <Label Text="Valor Total:" TextColor="Yellow" />
+                <Label Text="R$ 9.000,00" />
             </HorizontalStackLayout>
         </Frame>
 
-        <Button Text="Voltar"
-                HorizontalOptions="Center"
+        <Button Text="Voltar" 
+               
                 Clicked="Button_Clicked"
-                BackgroundColor="{StaticResource Primary}"
-                TextColor="White"
-                CornerRadius="10"
-                Margin="10" />
+                BackgroundColor="#7B68EE"
+                TextColor="Yellow"
+                CornerRadius="15"
+                Margin="10" 
+                FontAttributes="Bold"
+                FontSize="18"/>
         
     </VerticalStackLayout>
 </ContentPage>
